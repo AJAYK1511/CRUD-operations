@@ -10,7 +10,7 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name="hsh")
 
-public class Crud1234{
+public class Student{
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
@@ -18,13 +18,13 @@ public class Crud1234{
 	private String nameString;
 	@Column(name="RANKS")
 	private int rank;
-	public Crud1234(int id, String nameString, int rank) {
+	public Student(int id, String nameString, int rank) {
 		super();
 		this.id = id;
 		this.nameString = nameString;
 		this.rank = rank;
 	}
-	public Crud1234() {
+	public Student() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
